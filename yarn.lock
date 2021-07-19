@@ -2372,7 +2372,7 @@ __metadata:
     got: 11.8.2
     husky: 7.0.1
     jest: 27.0.6
-    knex: 0.95.6
+    knex: 0.95.7
     lightstep-opentelemetry-launcher-node: 0.17.0
     lint-staged: 11.0.0
     nanoid: 3.1.23
@@ -3168,7 +3168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1":
+"debug@npm:4, debug@npm:4.3.2, debug@npm:^4.0.0, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -3177,18 +3177,6 @@ __metadata:
     supports-color:
       optional: true
   checksum: 820ea160e267e23c953c9ed87e7ad93494d8cda2f7349af5e7e3bb236d23707ee3022f477d5a7d2ee86ef2bf7d60aa9ab22d1f58080d7deb9dccd073585e1e43
-  languageName: node
-  linkType: hard
-
-"debug@npm:4.3.1":
-  version: 4.3.1
-  resolution: "debug@npm:4.3.1"
-  dependencies:
-    ms: 2.1.2
-  peerDependenciesMeta:
-    supports-color:
-      optional: true
-  checksum: 2c3352e37d5c46b0d203317cd45ea0e26b2c99f2d9dfec8b128e6ceba90dfb65425f5331bf3020fe9929d7da8c16758e737f4f3bfc0fce6b8b3d503bae03298b
   languageName: node
   linkType: hard
 
@@ -5886,19 +5874,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knex@npm:0.95.6":
-  version: 0.95.6
-  resolution: "knex@npm:0.95.6"
+"knex@npm:0.95.7":
+  version: 0.95.7
+  resolution: "knex@npm:0.95.7"
   dependencies:
     colorette: 1.2.1
     commander: ^7.1.0
-    debug: 4.3.1
+    debug: 4.3.2
     escalade: ^3.1.1
     esm: ^3.2.25
     getopts: 2.2.5
     interpret: ^2.2.0
     lodash: ^4.17.21
-    pg-connection-string: 2.4.0
+    pg-connection-string: 2.5.0
     rechoir: ^0.7.0
     resolve-from: ^5.0.0
     tarn: ^3.0.1
@@ -5916,7 +5904,7 @@ __metadata:
       optional: true
   bin:
     knex: bin/cli.js
-  checksum: e627d2416f179208ad971e36502acea28cad4cc69b69de2d2a2df0cdd65f42b396e74688cd427bd4c8eb43897f6508165e60bf371808f05b923e9724e11cf95e
+  checksum: 1ba0a88f976fc214a874168a3ac70496d1e8027845ad460add97edef7d36833bd37f598b8e6c517fa8371bb2cfd9dcaa837eaad6da8eae99b652262cd67d194a
   languageName: node
   linkType: hard
 
@@ -7025,10 +7013,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pg-connection-string@npm:2.4.0":
-  version: 2.4.0
-  resolution: "pg-connection-string@npm:2.4.0"
-  checksum: 2743cb7f45beb9bc47438cd584c0194937fb2f7278a434e26e3d57305731a4b1b689f64d9bbe85b83cb5f8d093818e72bada6c9d5b954dbfcf2f9b795d5b0054
+"pg-connection-string@npm:2.5.0":
+  version: 2.5.0
+  resolution: "pg-connection-string@npm:2.5.0"
+  checksum: a6f3a068f7c9416a5b33a326811caf0dfaaee045c225b7c628b4c9b4e9a2b25bdd12a21e4c48940e1000ea223a4e608ca122d2ff3dd08c8b1db0fc9f5705133a
   languageName: node
   linkType: hard
 
