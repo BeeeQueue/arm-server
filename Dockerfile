@@ -8,10 +8,11 @@ COPY package.json .
 COPY pnpm-lock.yaml .
 COPY .npmrc .
 
+ENV PNPM_HOME=/pnpm
 ENV CI=1
 ENV NODE_ENV=production
 # Install dependencies
-RUN pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 
 FROM node:20-alpine AS docs
 
@@ -24,9 +25,10 @@ COPY pnpm-lock.yaml .
 COPY .npmrc .
 COPY docs/openapi.yaml docs/openapi.yaml
 
+ENV PNPM_HOME=/pnpm
 ENV CI=1
 # Install dependencies
-RUN pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 
 RUN pnpm --silent run docs
 
