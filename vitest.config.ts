@@ -1,8 +1,10 @@
+import path from "path"
+
 import { defineConfig } from "vitest/config"
 
 export default defineConfig(async ({ command }) => ({
   resolve: {
-    alias: [{ find: "@", replacement: "/src" }],
+    alias: [{ find: "@", replacement: path.resolve("./src") }],
   },
 
   test: {
