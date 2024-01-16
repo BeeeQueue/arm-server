@@ -33,6 +33,11 @@
     "typecheck": "tsc --noEmit",
     "prepare": "is-ci || husky install"
   },
+  "resolutions": {
+    "@types/node": "20.11.3",
+    "esbuild": "0.19.11",
+    "node-fetch": "npm:node-fetch-native@1.6.1"
+  },
   "dependencies": {
     "@fastify/cors": "8.5.0",
     "@fastify/helmet": "11.1.1",
@@ -57,7 +62,7 @@
   "devDependencies": {
     "@beequeue/eslint-plugin": "4.0.0",
     "@types/json-schema": "7.0.15",
-    "@types/node": "20.5.9",
+    "@types/node": "20.11.3",
     "@vitest/coverage-v8": "1.2.0",
     "ajv": "8.12.0",
     "dotenv": "16.3.1",
@@ -71,22 +76,22 @@
   },
   "pnpm": {
     "overrides": {
-      "@types/node": "20.5.9",
-      "esbuild": "0.19.2",
-      "node-fetch": "npm:node-fetch-native@1.4.0",
       "array-includes": "npm:@nolyfill/array-includes@latest",
       "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
       "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@latest",
       "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@latest",
+      "assert": "npm:@nolyfill/assert@latest",
+      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@latest",
       "has": "npm:@nolyfill/has@latest",
+      "hasown": "npm:@nolyfill/hasown@latest",
+      "isarray": "npm:@nolyfill/isarray@latest",
       "object.assign": "npm:@nolyfill/object.assign@latest",
       "object.entries": "npm:@nolyfill/object.entries@latest",
       "object.fromentries": "npm:@nolyfill/object.fromentries@latest",
       "object.hasown": "npm:@nolyfill/object.hasown@latest",
       "object.values": "npm:@nolyfill/object.values@latest",
-      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest",
       "side-channel": "npm:@nolyfill/side-channel@latest",
-      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@latest"
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
     }
   }
 }
