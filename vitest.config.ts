@@ -2,7 +2,7 @@ import { defineConfig } from "vitest/config"
 
 export default defineConfig(async ({ command }) => ({
   resolve: {
-    alias: { "@": "./src" },
+    alias: [{ find: "@", replacement: "/src" }],
   },
 
   test: {
